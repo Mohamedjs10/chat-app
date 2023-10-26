@@ -1,0 +1,61 @@
+html,
+body,
+#app,
+#root {
+  height: 100%;
+}
+
+audio {
+  filter: sepia(20%) saturate(70%) grayscale(1) contrast(99%) invert(12%);
+  width: 220px;
+  height: 30px;
+}
+
+@keyframes scale {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* Apply the animation to an element */
+.animated {
+  width: 100px;
+  height: 100px;
+  animation: scale 2s infinite;
+}
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,500,700");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  height: 100%;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+}
+
+.app {
+  height: 100%;
+}
+::-webkit-scrollbar {
+  width: 3px;
+  height: 0px;
+  background-color: #f5f5f5;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #2d317f;
+  border: 1px solid #2d317f;
+}
